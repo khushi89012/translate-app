@@ -1,0 +1,86 @@
+#container{
+    display: flex;
+    height: 600px;
+    
+}
+#input-section {
+    border-radius: 15%;
+    text-align: center;
+    flex:5;
+    border:1px solid black;
+    margin: 5%;
+  
+    background-color: #000000;
+background-image: linear-gradient(315deg, #000000 0%, #b82e1f 74%); 
+
+}
+#output-section{
+    border-radius: 15%;
+    flex:5;
+    color:white;
+    font-size: 45px;
+ 
+    vertical-align: middle;
+   border:1px solid  #a40606;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+    border:1px solid black;
+    margin: 5%;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #b82e1f 74%); 
+}
+div{
+   
+    height: 300px;
+}
+#input-text{
+    text-align: center;
+    border-radius: 30px;
+    font-size: 32px;
+    line-height: 90%;
+    color:black;
+    vertical-align: middle;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-weight: bold;
+    font-family: cursive;
+    width: 90%;height: 70%;
+    margin: auto;
+    text-decoration: none;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+}
+body{
+    background-image: conic-gradient(rgb(192, 191, 191), rgb(56, 56, 54), rgb(190, 190, 190));
+
+}
+#navbar{
+    height: 60px;
+    width: 100%;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #474747 74%);
+    border-radius: 30px;
+    text-align: center; 
+    line-height: 60px;
+    font-size: 20px;
+    text-shadow: rgb(116, 111, 111) 2px 0 10px;
+    color:white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+#translate-btn{
+    border: none;
+    background-color: #000000;
+background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+padding: 11px;
+font-size: 15px;
+text-shadow: rgb(116, 111, 111) 2px 0 10px;
+color:white;
+
+}
+
+button:hover{
+    background-color: #000000;
+    color:white;
+}

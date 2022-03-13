@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+ 
+
+  <body>
+  
+      <div id = "navbar"> <h1>Your Translate Platform </h1<i class="fa fa-spinner fa-pulse"></i>
+     
+        <i class="fa fa-refresh fa-spin"></i>
+       
+       
+  </div>
+  
+    
+    <div id="container">
+      <div id="input-section">
+          <button onclick="translate_me()" id = "translate-btn">Translate<i class="fa fa-spinner fa-spin"></i> </button>
+       <select id='voiceList'></select>
+          <button id='btnSpeak'>SPEAK! <i class="fa fa-cog fa-spin"></i></button>
+          <textarea id = "input-text"></textarea>
+        
+      </div>
+      <div id="output-section">
+        <p id="translated-text">
+         
+          <!--Show translated text here-->
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src= "script.js"></script>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+        body {
+          background-color: white;
+        }
+            .login-card {
+  
+  width: 400px;
+  background-color: #fbf7f7;
+  margin: 0px auto ;
+  border-radius: 9px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  min-height:440px;
+ 
+}
+
+.log_head{ background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #b82e1f 74%); ; width:400px; height:120px; border-radius:9px 9px 0 0px; }
+
+.login-card h1 {
+  text-align: center;
+  font-family:open Sans;
+  color:#FFFFFF;
+  font-weight:700px;
+  font-size:20px;
+  line-height:27px;
+  padding-top: 24px;
+  
+}
+
+
+.log_body{ padding:40px 20px 20px 20px;}
+
+.log_user{ background:#FEFEFE; color:#999999; border-radius: 10px; width:349px; height:31px; padding:5px; font-family:open Sans; font-weight:700px; font-size:15px; border:none; }
+
+.log_Pass{background:#FEFEFE; color:#999999; border-radius: 10px; width:349px; height:31px; padding:5px; font-family:open Sans; font-weight:700px; font-size:15px; border:none;}
+
+
+.login-submit{  background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #b82e1f 74%); ; border:none; border-radius: 10px; width:359px; height:36px; cursor:pointer; font-family:open Sans; font-weight:700px; font-size:15px; color:#FFFFFF; }
+
+.log_body a{ text-decoration:none; color:#04054e; font-family:open Sans; font-weight:900px; font-size:15px; line-height:21px;}
+table{
+  width:"200";
+   border:"0";
+    /* align:"center"; */
+}
+#signin{
+text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        <div class="log_head">
+        <h1>SIGN UP</h1>
+       
+        </div>
+        
+        <div class="log_body">
+        <form action="#" method="get">
+         <table>
+         
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><input  id = "email" placeholder="Email" type="text" name="Email" class="log_Pass"></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+
+          <tr>
+            <td>
+              <input  id = "name" placeholder="User Name" type="text" name="loginid" class="log_user" ></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><input id = "pass" placeholder="Password" type="password" name="pass" class="log_Pass"></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><input id = "number" type="number"  class="log_Pass" placeholder="Mobile Number"></td>
+          </tr>
+          
+          <tr>
+          <td><input name="remember" type="checkbox" value="Remember Me"> Keep me logged in</td>
+          </tr>
+          <tr>
+          <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><input id = "signin" onclick="window.location.href='login.html'" type="click" name="login" class="login-submit" value="SUBMIT"></td>
+           </tr>
+         
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+         
+        </table>
+        
+        </form> 
+</body>
+</html>
+<script>
+document.querySelector("#signin").addEventListener("click",signIn)
+var mailarr = JSON.parse(localStorage.getItem("datauser"))||[];
+  
+    function signIn(){
+        
+var name = document.querySelector("#name").value
+var email = document.querySelector("#email").value
+var pass = document.querySelector("#pass").value
+console.log(name,email,pass)
+
+
+var dataobj= {
+    dataname : name,
+    datamail : email,
+    datapass : pass
+}
+mailarr.push(dataobj)
+localStorage.setItem("datauser",JSON.stringify(mailarr))
+alert("signup success");
+    window.location.href = "login.html";
+    }
+    for(var i = 0; i < mailarr.length; i++){
+      if(mailarr[i].dataname === "" && mailarr[i].datapass === ""){
+    
+    alert("please fill the details");
+   
+  }
+    }
+    
+
+
+
+
+</script>
